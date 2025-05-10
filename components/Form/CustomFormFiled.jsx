@@ -21,7 +21,7 @@ const CustomFormFiled = ({
     <FormField
     control={control}
       name={name}
-      render={({ field }) => {
+      render={({ field }) => (
         <FormItem>
           {label && <FormLabel>{label}</FormLabel>}
           <FormControl>
@@ -33,8 +33,8 @@ const CustomFormFiled = ({
             />
           </FormControl>
           <FormMessage/>
-        </FormItem>;
-      }}
+        </FormItem>
+      )}
     ></FormField>
   );
 };

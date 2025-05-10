@@ -11,16 +11,16 @@ import {
 
 const SignupPage = () => {
   return (
-    <section className="flex items-center justify-center h-screen">
+    <section className="flex items-center justify-center h-screen ">
       <div className="fixed top-5 right-5">
         <ModeToggle />
       </div>
       <Card className="w-full rounded-lg shadow border-input md:mt-0  sm:max-w-[32rem] xl:p-0">
-        <CardHeader>
+        <CardHeader className="mt-5">
           <CardTitle>Create</CardTitle>
           <CardDescription>Create an account</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="my-10">
           <SignupForm />
         </CardContent>
       </Card>

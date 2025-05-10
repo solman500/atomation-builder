@@ -45,7 +45,26 @@ const SignupForm = () => {
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           <div className="flex flex-col space-y-4">
-          <CustomFormFiled  />
+            <CustomFormFiled
+              control={form.control}
+              name="name"
+              label="Name"
+              placeholder="Enter your name"
+            />
+            <CustomFormFiled
+              control={form.control}
+              name="email"
+              label="Email"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <CustomFormFiled
+              control={form.control}
+              name="password"
+              label="Password"
+              type="password"
+              placeholder="Enter your password"
+            />
           </div>
         </form>
       </Form>
